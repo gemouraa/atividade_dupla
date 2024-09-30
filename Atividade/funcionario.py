@@ -9,10 +9,10 @@ class Funcionario (ABC):
         self.endereco = endereco 
    
 
-@abstractmethod
 
-def __str__(self) -> str:
-     return (f"\nNome: {self.nome}"
-              f"\n Telefone: {self.telefone}"
+    def __str__(self) -> str:
+     return     (f"\nNome: {self.nome}"
+                f"\nTelefone: {self.telefone}"
                 f"\nEmail: {self.email}"
                 f"\nEndereco: {self.endereco}")
+    
