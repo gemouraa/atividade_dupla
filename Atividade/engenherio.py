@@ -1,5 +1,6 @@
+
 class Engenheiro: 
-    def __init__(self,nome: str, telefone: str, email: str, endereco: Endereco, crea: str, salario_base: float) -> None:
+    def __init__(self,nome: str, telefone: str, email: str, crea: str, salario_base: float) -> None:
         self.crea= crea
         self.salario_base = salario_base
 
