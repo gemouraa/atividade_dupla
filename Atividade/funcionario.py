@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod 
-from Atividade.arquivo_1 import Endereco
+from Atividade.endereco import Endereco
 
 class Funcionario (ABC): 
     def __init__(self, nome: str, telefone: str ,email: str, endereco: Endereco, salario: float) -> None:
