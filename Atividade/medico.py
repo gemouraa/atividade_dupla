@@ -3,4 +3,4 @@ class Medico:
         self.crm = crm 
 
     def __str__(self) -> str:
-        return (f"\n")   
+        return (f"\nCRM: {self.crm}")   
