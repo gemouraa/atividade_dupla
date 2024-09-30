@@ -7,8 +7,4 @@ class Medico:
         return self.salario_base * 1.5
 
     def __str__(self) -> str:
-<<<<<<< HEAD
-        return (f"\nCRM: {self.crm}")   
-=======
         return (f"\nCrm: {self.crm}")
->>>>>>> a882a6d (update)
