@@ -1,3 +1,5 @@
+from Atividade.funcionario import Funcionario  
+
 class Medico:
     def __init__(self, nome: str, telefone: str, email: str, crea: str) -> None:
         self.crea= crea
