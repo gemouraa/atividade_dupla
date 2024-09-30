@@ -1,7 +1,7 @@
 import os
 
-from Atividade.arquivo_1 import  Endereco
-from Atividade.Arquivo_2 import Funcionario
+from Atividade.funcionario import  Endereco
+from Atividade.funcionario import Funcionario
 from Atividade.engenherio import Engenheiro
 from Atividade.medico import Medico
 
