@@ -9,8 +9,7 @@ class Funcionario (ABC):
         self.endereco = endereco 
 
     def __str__(self) -> str:
-        return (f"\nNome: {self.nome}
+        return (f"\nNome: {self.nome}"
                 f"\n Telefone: {self.telefone}"
                 f"\nEmail: {self.email}"
-                f"\nEndereco: {self.endereco}"
-                ")
+                f"\nEndereco: {self.endereco}")
