@@ -1,8 +1,9 @@
 from Atividade.funcionario import Funcionario  
+from Atividade.funcionario import Endereco
 
-class Medico:
-    def __init__(self, nome: str, telefone: str, email: str, crea: str) -> None:
-        self.crea= crea
+class Medico(Funcionario):
+    def __init__(self, nome: str, telefone: str, email: str, crm: str, salario_base: float, endereco: Endereco) -> None:
+        self.crm= crm
         self.salario_base = salario_base
 
     def salario_final(self) -> float:
