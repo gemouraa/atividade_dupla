@@ -1,7 +1,11 @@
 import pytest 
 import os 
+<<<<<<< HEAD
 from models.medico import Endereco, Medico
 
+=======
+from models.medico import Medico
+>>>>>>> f052aca (atividade)
 os.system("cls||clear")
 
 
