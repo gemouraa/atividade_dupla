@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from models.endereco import Endereco
 
 class Funcionario (ABC): 
+    @abstractmethod
     def __init__(self, nome: str, telefone: str ,email: str, endereco: Endereco) -> None:
         self.nome = nome
         self.telefone = telefone

@@ -1,11 +1,11 @@
+import os
 import pytest
-
 from models.funcionario import Funcionario
+from models.endereco import Endereco
 
 @pytest.fixture
 def funcionario_valido():
-    funcionario = funcionario("Moura",111,"guilherme@gmail.com")
+    funcionario = Funcionario("Moura",111,"guilherme@gmail.com",Endereco("Rua anisio",115,"atras da igreja",40430510,"Salvador"))
     return funcionario
-def test_funcionario_nome_valido(funcionario_valido):
-        funcionario_valido.nome = "Moura"
+def test_funcionario_nome_valido(pessoa_valida):
         assert funcionario_valido.nome == "Moura"
