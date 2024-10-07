@@ -1,7 +1,7 @@
 import os
 import pytest
-from Atividade.engenheiro import Engenheiro 
-from Atividade.engenheiro import Endereco    
+from models.engenheiro import Engenheiro 
+from models.engenheiro import Endereco    
 
 os.system("cls||clear")
 

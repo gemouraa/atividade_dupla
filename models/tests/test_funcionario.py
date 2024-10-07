@@ -1,6 +1,6 @@
 import pytest
 
-from Atividade.funcionario import Funcionario
+from models.funcionario import Funcionario
 
 @pytest.fixture
 def funcionario_valido():
