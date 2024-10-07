@@ -1,13 +1,14 @@
-import os
 import pytest
 from models.engenheiro import Engenheiro 
 from models.endereco import Endereco    
 
-os.system("cls||clear")
+
+
 
 @pytest.fixture
 def pessoa_valida():
-     engenheiro = Engenheiro("Luiza", "458745", "marialuiza@gmail.com","123456", 5000, Endereco("Anisio", 44, "Perto da padaria", 40715366, "Salvador" ))
+     engenheiro = Engenheiro ("Luiza", "458745", "marialuiza@gmail.com","123456", 5000, 
+                              Endereco("Anisio", 44, "Perto da padaria", 40715366, "Salvador" ))
      return engenheiro
 
 def test_engenheiro_nome_valido(pessoa_valida):
@@ -23,7 +24,7 @@ def test_engenheiro_crea_valido(pessoa_valida):
     assert pessoa_valida.crea == "123456"
 
 def test_engenheiro_salario_valido(pessoa_valida):
-    assert pessoa_valida.salario == 10000
+    assert pessoa_valida.salario == 5000
 
 def test_engenheiro_endereco_logradouro_valido(pessoa_valida):
     assert pessoa_valida.endereco.logradouro == "Anisio"
