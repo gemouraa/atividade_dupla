@@ -8,4 +8,4 @@ def funcionario_valido():
     funcionario = Funcionario("Moura",111,"guilherme@gmail.com",Endereco("Rua anisio",115,"atras da igreja",40430510,"Salvador"))
     return funcionario
 def test_funcionario_nome_valido(pessoa_valida):
-        assert funcionario_valido.nome == "Moura"
+        assert pessoa_valida.nome == "Moura"
