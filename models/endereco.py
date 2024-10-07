@@ -1,6 +1,5 @@
-import os
 
-class Endereco:
+class Endereco():
     def __init__(self,logadouro: str,numero: str,complemento: str,cep: str,cidade:str) -> None:
         self.logadouro = logadouro
         self.numero = numero
