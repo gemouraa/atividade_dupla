@@ -4,6 +4,10 @@ from models.endereco import Endereco
 
 class Medico():
     def __init__(self, nome: str, telefone: str, email: str, crm: str, salario_base: float, endereco: Endereco) -> None:
+        if not nome:
+            raise ValueError("Nome não pode estar vazio.")
+        if not email:
+            raise TypeError("Email não pode estar vazio.")
         self.nome = nome
         self.telefone = telefone
         self.email = email
