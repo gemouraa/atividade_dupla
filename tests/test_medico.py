@@ -23,7 +23,7 @@ def test_medico_crm_valido(pessoa_valida):
     assert pessoa_valida.crm == "123456789"
 
 def test_medico_salario_valido(pessoa_valida):
-    assert pessoa_valida.salario == 4000
+    assert pessoa_valida.salario_base == 4000
 
 def test_medico_endereco_logradouro_valido(pessoa_valida):
     assert pessoa_valida.endereco.logradouro == "Anisio"

@@ -24,7 +24,7 @@ def test_engenheiro_crea_valido(pessoa_valida):
     assert pessoa_valida.crea == "123456"
 
 def test_engenheiro_salario_valido(pessoa_valida):
-    assert pessoa_valida.salario == 5000
+    assert pessoa_valida.salario_base == 5000
 
 def test_engenheiro_endereco_logradouro_valido(pessoa_valida):
     assert pessoa_valida.endereco.logradouro == "Anisio"
