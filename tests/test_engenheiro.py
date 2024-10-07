@@ -7,8 +7,8 @@ os.system("cls||clear")
 
 @pytest.fixture
 def pessoa_valida():
-     engenheiro = Engenheiro ("Luiza", "458745", "marialuiza@gmail.com","123456", 5000, Endereco("Anisio", 44, "Perto da padaria", 40715366, "Salvador" ))
-     return Engenheiro
+     engenheiro = Engenheiro("Luiza", "458745", "marialuiza@gmail.com","123456", 5000, Endereco("Anisio", 44, "Perto da padaria", 40715366, "Salvador" ))
+     return engenheiro
 
 def test_engenheiro_nome_valido(pessoa_valida):
      assert pessoa_valida.nome == "Luiza"
